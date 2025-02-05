@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        fieldset{
+            border: 10px solid pink;
+            border-radius: 10px;
+            color: blueviolet;
+            font-size: 50px;
+            box-shadow: 25px 25px 5px pink;
+        }
+        legend{
+            text-align: center;
+            box-shadow: 5px 5px 5px blueviolet;
+            border: 3px solid cyan;
+            border-radius: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .photo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content:space-evenly;
+        }
+        img{
+            border:10px solid blueviolet;
+            border-radius: 100%;
+        }
+        span{
+            text-decoration: underline;
+
+        }
+        p{
+            margin-top: ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="pt-25"><p>soma</p></div>
+        <fieldset>
+            <div class="photo"><img src="./images/photo.jpg" alt="PaswordPhoto"><p>My Name is <span>Someshwar</span> Waghmode</p></div>
+            <legend>Student Details</legend>
+            <details>
+                <summary>College Info</summary>
+                <dt>
+                    <dd>
+                        <div>Name : Someshwar Waghmode</div>
+                        <div>Class : TE-Comp</div>
+                        <div>Division : ( A )</div>
+                        <div>College : ICEM</div>
+                    </dd>
+                </dt>
+            </details>
+            <details>
+                <summary>Persional Info</summary>
+                <dt>
+                    <dd>
+                        <div>Vilege : Pimpri BK</div>
+                        <div>Taluka : Parli</div>
+                        <div>District : Beed</div>
+                        <div>State : Maharastra-431128</div>
+                    </dd>
+                </dt>
+            </details>
+
+        </fieldset>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Vnav{
+            background-color: #dada;
+            display: inline-block;
+            width: 300px;
+            height: 100vh;
+            padding-left: 0px;
+            position: absolute;
+            left: -375px;
+            transition: ease-in 1s;
+        }
+        .vertical-Ol{
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            align-items: start;
+            justify-content: space-around;
+        }
+        .btn{
+            display: flex;
+            flex-direction:row-reverse;
+            margin: 15px;
+        }
+        .vertical-li{
+            font-size: 25px;
+            font-weight: 1000;
+            list-style: none;
+           
+        }
+        .border{
+            width: 70%;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .border:hover{
+            background-color: whitesmoke;
+            transition: ease-in-out 0.5s;
+            cursor: pointer;
+        }
+
+    </style>
+    <script>
+        function show(){
+            document.getElementById('Verticalnav').style.left='2px'
+        }
+        function hide(){
+            document.getElementById('Verticalnav').style.left='-375px'
+        }
+    </script>
+    
+</head>
+<body>
+    <button onclick="show()">btn</button>
+    <div id="Verticalnav" class="Vnav">
+        <div  class="btn">
+            <img onclick="hide()" src="./images/image.png" alt="" width="20px" height="20px">
+        </div>
+            <ol class="vertical-Ol">
+                <div class="border"><li class="vertical-li">Home</li></div>
+                <div class="border"><li  class="vertical-li">Latest</li></div>
+                <div class="border"><li  class="vertical-li">E-Paper</li></div>
+                <div class="border"><li  class="vertical-li">Markets</li></div>
+                <div class="border"><li  class="vertical-li">Opinion</li></div>
+                <div class="border"><li  class="vertical-li">Elections</li></div>
+                <div class="border"><li  class="vertical-li">India News</li></div>
+                <div class="border"><li  class="vertical-li">Portfolio</li></div>
+                <div class="border"><li  class="vertical-li">More</li></div>
+                <div class="border"><li  class="vertical-li">Budget 2025</li></div>
+            </ol>
+       </div>
+</body>
+</html>
